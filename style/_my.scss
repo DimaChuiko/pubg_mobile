@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+}
+.gridContainer {
+    max-width: 1100px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+h1 {
+  font:bold 6rem "Ubuntu";
+  color:#ffffff;
+  position:relative;
+}
+h1::before {
+  content:"";
+  position:absolute;
+  width:12px;
+  height: 114px;
+  border-radius:5px;
+  background-color:#ffad2c;
+  left:-25px;
+  top:15px;
+}
+h2 {
+  font:bold 3rem "Ubuntu";
+  color:#ffffff;
+  padding: 15px 30px;
+  display: inline-block;
+}
+h3 {
+  font:500 2.4rem "Ubuntu";
+  color:#ffc23e;
+}
+.pH1, .pH2, .pH3 {
+  font:normal 1.6rem "Ubuntu";
+  color:#ffffff;
+}
+.pH1 {
+  font-weight: bold;
+  color:#ffffff;
+}
+.pH3 {
+  font-size:2.8rem;
+}
+.pH2 {
+  margin-top:20px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.wrapper .colorOrage {
+  color:#ffc23e;
+}
+/*----------------------------- header ---------------------------*/
+.wrapper .header {
+  padding:15px;
+  width:100%;
+    background-color: #0d122d;
+}
+.header .logoHeader {
+  width:100px;
+  height:75px;
+  background: url("../img/logo_header.png") center no-repeat;
+}
+.header .flex {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuBlock .rulesLink {
+  font:300 1.8rem "Ubuntu";
+  color:#ffffff;
+  margin-right: 20px;
+}
+.menuBlock .formBlock {
+  display: none;
+}
+.menuBlock .privatOffice {
+  background-color:#ffad2c;
+  font:500 1.8rem "Ubuntu";
+  color:#010f42;
+  border:none;
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  vertical-align: middle;
+}
+.privatOffice .textBut {
+  display: none;
+}
+/*----------------------------- banner ---------------------------*/
+.wrapper .banner {
+  padding:50px 20px;
+  position: relative;
+  background: url("../img/back_banner.jpg") center no-repeat;
+    background-size: cover;
+    height:600px;
+}
+.wrapper .banner::after {
+  content:"";
+  background:url("../img/soldier.png") center no-repeat;
+  width:594px;
+  height:497px;
+  position:absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 20px;
+}
+.flex1 .blockH1 {
+  position:absolute;
+  padding-left: 15px;
+  margin-left: 50px;
+  top:25vh;
+  z-index: 2;
+}
+.wrapper .banner::before {
+  content:"";
+  position:absolute;
+  background:url("../img/polkadot.png") center no-repeat;
+  width:184px;
+  height:112px;
+  top:40px;
+  z-index: 1;
+}
+/*------------------------- tournaments --------------------*/
+.mainContent .tournaments {
+  background: url("../img/back_tournaments.jpg") center no-repeat;
+  background-size: cover;
+  padding:30px 0;
+}
+.infoGame .timeGame {
+  font-size:2rem;
+}
+.tournaments .flex2 {
+  display: flex;
+  flex-direction: column;
+}
+h2, .article {
+  border:.5rem solid #fba93d;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.flex2 .blockH2 {
+  width:80%;
+  margin:15px auto;
+}
+.flex2 .article {
+  width:100%;
+  margin:15px auto;
+  padding:15px;
+}
+.flex2 .article {
+  background-color: rgba(51, 52, 102, 0.78);
+}
+.flex2 .article:hover {
+  background-color: rgba(102, 51, 51, 0.78);
+}
+.infoGame p {
+  font:500 1.8rem "Ubuntu";
+  color:#ffffff;
+}
+.flex2 .tournamentInfo {
+  border-top: none;
+  border-bottom: none;
+  background:url("../img/back_capBlock.jpg") center no-repeat;
+  background-size:cover;
+  font:300 2rem "Ubuntu";
+  color:#ffc23e;
+  text-align: center;
+}
+.tournamentInfo .textInfo {
+  margin: 100px 15px 0;
+}
+/*---------------------- @media 667 --------------------------*/
+@media screen and (min-width:667px) {
+  .flex1 .blockH1 {
+    top: 10vh;
+  }
+  .privatOffice .textBut {
+    display: inline;
+    margin:5px 5px 5px 15px;
+  }
+  .menuBlock .privatOffice {
+    vertical-align: 0;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .privatOffice img {
+    margin:5px 10px;
+  }
+}
+/*---------------------- @media 778 --------------------------*/
+@media screen and (min-width:768px) {
+  .flex2 .article {
+    width: 45%;
+  }
+  .flex2 .blockH2 {
+    width:45%;
+}
+  .tournaments .flex2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
