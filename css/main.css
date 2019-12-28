@@ -1,3 +1,32 @@
+/*-------------------------- rules ------------------------*/
+.mainContent .rules {
+  padding: 30px 0;
+  background: url("../img/back_rules.jpg") center no-repeat;
+  background-size: cover;
+  border-top: .4rem solid #fba93d; }
+
+.rules li {
+  list-style-type: none;
+  margin: 15px 0; }
+
+.flex4 h2 {
+  margin: 15px 0; }
+
+.flex4 ol {
+  font: normal 1.6rem "Ubuntu";
+  color: #ffffff;
+  margin: 80px 50px 80px 0; }
+
+@media screen and (min-width: 768px) {
+  .flex4 ol,
+  .flex4 .blockH2 {
+    width: 70%; } }
+
+@media screen and (min-width: 1360px) {
+  .flex4 ol,
+  .flex4 .blockH2 {
+    width: 50%; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +82,8 @@ h3 {
 
 a {
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 button {
   cursor: pointer; }
@@ -177,8 +207,11 @@ h2, .article {
   border-bottom-left-radius: 30px; }
 
 .flex2 .blockH2 {
-  padding: 20px 0;
-  background: url("../img/pubg_mobile.png") center no-repeat; }
+  padding: 15px 0; }
+
+.flex2, .flex4 {
+  background: url("../img/pubg_mobile.png") no-repeat;
+  background-position: 60px 65px; }
 
 .flex2 .article {
   position: relative;
@@ -245,6 +278,7 @@ h2, .article {
   padding: 10px 20px;
   margin-top: 15px; }
 
+/*--------------------------------- //tournaments ------------------------------*/
 /*---------------------------------- platform ---------------------------------*/
 .mainContent .platform {
   position: relative;
@@ -303,6 +337,36 @@ h2, .article {
   top: 10%;
   display: none; }
 
+/*-------------------------- foooter --------------------------*/
+.wrapper .footer {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: #000f2e; }
+
+.footer .logoFooter {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 40px;
+  width: 200px;
+  height: 110px;
+  background: url("../img/logo_footer.png") center no-repeat, #000f2e;
+  z-index: 2; }
+
+.footer .textFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  border-top: .4rem solid #fba93d;
+  z-index: 1; }
+
+.textFooter .infoSite {
+  font: normal 1.6rem "Ubuntu";
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center; }
+
 /*---------------------- @media 667 --------------------------*/
 @media screen and (min-width: 667px) {
   .flex1 .blockH1 {
@@ -325,7 +389,7 @@ h2, .article {
     content: "";
     display: block; } }
 
-/*---------------------- @media 778 --------------------------*/
+/*---------------------- @media 768 --------------------------*/
 @media screen and (min-width: 768px) {
   .flex2 .article,
   .flex2 .blockH2 {
@@ -344,27 +408,39 @@ h2, .article {
   .blockH1 .pH1 {
     margin: 15px 0 15px 50px; }
   .banner .linkRegistry {
-    margin-left: 50px; } }
+    margin-left: 50px; }
+  .article .blockPlayers,
+  .article .singUp {
+    position: static;
+    margin-top: 15px; }
+  .flex2 .article:nth-child(odd) {
+    margin-left: 0; }
+  .flex2 .article:nth-child(even) {
+    margin-right: 0; } }
 
 /*---------------------- @media 1024 --------------------------*/
 @media screen and (min-width: 1024px) {
   .flex1 .blockH1 {
     top: 30%;
-    width: 40%; }
+    width: 25%; }
   .wrapper .platform::before {
     content: "";
     right: calc(50% - 39rem); }
   .wrapper .banner::after {
     content: "";
-    right: calc(50% - 52rem); } }
+    right: calc(50% - 50rem); }
+  .article .blockPlayers,
+  .article .singUp {
+    position: absolute;
+    margin-top: 0; } }
 
 /*---------------------- @media 1280 --------------------------*/
 @media screen and (min-width: 1280px) {
   .wrapper .banner::before {
     content: "";
-    left: calc(50% - 55rem); } }
+    left: calc(50% - 55rem); }
+  .wrapper .banner::after {
+    content: "";
+    right: calc(50% - 52rem); } }
 
 /*---------------------- @media 1360 --------------------------*/
-@media screen and (min-width: 1360px) {
-  .flex1 .blockH1 {
-    width: 30%; } }
