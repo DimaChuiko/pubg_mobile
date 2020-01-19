@@ -16,20 +16,22 @@
 <header class="header">
     <div class="gridContainer flex">
       <a href="index.html" class="logoHeader"></a> <!--logo-->
-    <nav class="menuBlock main-nav">
-     <a href="rules.html" class="rulesLink">Правила</a>
-     <a href="#0" class="privatOffice login">
+      <div class="menuBlock">
+        <a href="rules.html" class="rulesLink">Правила</a>
+     <nav class="main-nav">
+     <a href="#0" class="privatOffice">
       <span class="textBut">Личный кабинет</span>
       <img src="img/noun_profile.png" alt="image"></a>
     </nav>
-<!----------------------------- form_block --------------------------->
-<div class="user-modal">
-    <div class="user-modal-container">
-      <ul class="switcher">
-        <li><a href="#0">РЕГИСТРАЦИЯ</a></li>
-        <li><a href="#0">ВХОД</a></li>
-      </ul>
-<!-------------- form singUp -------------->
+  </div>
+    <!----------------------------- form_block --------------------------->
+    <div class="user-modal">
+      <div class="user-modal-container">
+        <ul class="switcher">
+          <li><a href="#1">РЕГИСТРАЦИЯ</a></li>
+          <li><a href="#0">ВХОД</a></li>
+        </ul>
+      <!-------------- form singUp -------------->
       <div id="signup">
         <form class="form" action="" method="post" name="registerform">
           <p><label>Ваш ник PUBG<i class="colorOrage">*</i><br>
@@ -44,6 +46,9 @@
         <p><label>Повторите пароль<i class="colorOrage">*</i><br>
           <input type="password" size="30" placeholder="Повторите пароль" name="password-repeat"></label>
         </p>
+        <p><label>Изображение профиля<br>
+          <input type="file"></label>
+        </p>
         <p><label>Ваш E-mail<i class="colorOrage">*</i><br>
           <input name="u_email" size="30" type="email" placeholder="Введите E-mail"></label>
         </p>
@@ -57,7 +62,7 @@
         </form>
         <!-- <a href="#0" class="cd-close-form">Close</a> -->
       </div>
-<!-------------- form login -------------->
+      <!-------------- form login -------------->
       <div id="login">
         <form class="form" action="" method="post" name="loginf">
         <p><label>Введите пароль<i class="colorOrage">*</i><br>
@@ -70,27 +75,23 @@
         </a></p>
           <p><input name="login" type= "submit" value="ВХОД"></p>
         </form>
-
         <!-- <a href="#0" class="close-form">Close</a> -->
       </div>
-      <!---------------- reset password -------------->
-      <div id="reset-password">
-        <p class="form-message">Забыли пароль? Пожалуйста, введите свой адрес электронной почты. </br> Вы получите ссылку для создания нового пароля.</p>
-        <form class="form">
-          <p>
-            <label class="image-replace email" for="reset-email">Ваш E-mail<br>
-            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="Введите E-mail"></label>
-          <p>
-            <input class="full-width has-padding" type="submit" value="Reset password">
-          </p>
+  <div id="reset-password">
+    <p class="form-message">Забыли пароль? Пожалуйста, введите свой адрес электронной почты. </br> Вы получите ссылку для создания нового пароля.
+    </p>
+    <form class="form">
+      <p><label class="image-replace email" for="reset-email">Ваш E-mail<br>
+          <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="Введите E-mail"></label></p>
+      <p><input class="full-width has-padding" type="submit" value="Reset password"></p>
         </form>
-        <p class="form-bottom-message"><a href="#0"><--- Назад</a></p>
+      <p class="form-bottom-message"><a href="#0"><--- Назад</a></p>
       </div>
       <a href="#0" class="close-form">Close</a>
     </div>
-  </div>
+</div>
 <!----------------------------- //form_block --------------------------->
-	</div>
+</div>
 </header>
 <!-------------------------------- //header --------------------------------->
 <!-------------------------------- banner -------------------------------->
@@ -99,55 +100,8 @@
 		<div class="blockH1">
 			<h1>Турниры по PUBG mobile</h1>
 			<p class="pH1">Участвовать могут только зарегистрированные пользователи (указывать исключительно верные данные, чтобы мы могли добавить вас в игровое лобби).</p>
-			<a href="" class="linkRegistry">РЕГИСТРАЦИЯ</a>
+			<a href="#1" class="linkRegistry">РЕГИСТРАЦИЯ</a>
 		</div>
-<!--------------------------- form registry ------------------------>
-      <!--<div class="formRegistry">
-        <div class="blockH4">
-          <h4 class="colorOrage">РЕГИСТРАЦИЯ</h4>
-          <a href="#" class="linkSingin">ВХОД</a>
-        </div>
-        <form action="" method="post" name="registerform">
-          <p><label>Ваш ник PUBG<i class="colorOrage">*</i><br>
-          <input name="u_name" size="30" type="text" value="" placeholder="Введите НИК"></label>
-        </p>
-        <p><label>Ваш ID в PUBG<i class="colorOrage">*</i><br>
-          <input name="u_nicename" size="30" type="text" placeholder="Введите ID"></label>
-        </p>
-        <p><label>Придумайте пароль<i class="colorOrage">*</i><br>
-          <input name="u_pass" size="30" type="password" placeholder="Введите пароль"></label>
-        </p>
-        <p><label>Повторите пароль<i class="colorOrage">*</i><br>
-          <input type="password" size="30" placeholder="Повторите пароль" name="password-repeat"></label>
-        </p>
-        <p><label>Ваш E-mail<i class="colorOrage">*</i><br>
-          <input name="u_email" size="30" type="email" placeholder="Введите E-mail"></label>
-        </p>
-        <p class="checkBox">
-          <input type="checkbox" name="имя флажка" value="">
-          ПРИНИМАЮ ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
-          И ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ
-        </p>
-        <p><input name="register" type="submit" value="РЕГИСТРАЦИЯ">
-        </p>
-        </form>
-      </div>
-------------------------- form singUp --------------------------
-      <div class="formSingin">
-        <div class="blockH4">
-          <a href="" class="linkSingin">РЕГИСТРАЦИЯ</a><h4 class="colorOrage">ВХОД</h4>
-        </div>
-        <form action="" method="post" name="loginf">
-        <p><label>Введите пароль<i class="colorOrage">*</i><br>
-         <input name="password" size="25" type="password" placeholder="Введите пароль"></label>
-        </p>
-        <p><label>Ваш E-mail<i class="colorOrage">*</i><br>
-          <input name="u_email" size="30" type="email" placeholder="Введите E-mail"></label>
-        </p>
-        <p>Забыли пароль?</p><br>
-          <p><input name="login" type= "submit" value="ВХОД"></p>
-        </form>
-      </div> -->
     </div>
 </section>
 <!-------------------------------- //banner -------------------------------->
@@ -304,6 +258,7 @@
 <!-------------------------------- //wrapper -------------------------------->
 <!------------------------------- script ----------------------------------->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/modal.min.js" type="text/javascript"></script>
     <script src="js/main.min.js" type="text/javascript"></script>
 </body>
 </html>

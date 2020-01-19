@@ -94,15 +94,19 @@ button {
   align-items: center; }
 
 .flex .menuBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 15px; }
 
-.menuBlock .rulesLink {
+.flex .rulesLink,
+.flex .officeLink {
   font: 300 1.8rem "Ubuntu";
   color: #ffffff;
   margin-right: 20px; }
-
-.menuBlock .formBlock {
-  display: none; }
 
 .menuBlock .privatOffice {
   background-color: #ffad2c;
@@ -252,8 +256,8 @@ h2, .article {
   padding: 10px 20px;
   margin-top: 15px; }
 
-/*--------------------------------- //tournaments ------------------------------*/
-/*---------------------------------- platform ---------------------------------*/
+/*----------------------- //tournaments ------------------------------*/
+/*------------------------- platform ---------------------------------*/
 .mainContent .platform {
   position: relative;
   padding: 50px 0;
@@ -495,7 +499,7 @@ h2, .article {
   padding: 15px; }
 
 .form p {
-  margin: 10px -15px;
+  margin: 10px auto;
   text-align: center; }
 
 .form input:focus {
@@ -506,6 +510,9 @@ input[type="password"],
 input[type="email"] {
   text-align: center;
   width: 55%; }
+
+input[type="file"] {
+  width: 45%; }
 
 form .checkBox {
   margin: 15px;
@@ -530,6 +537,9 @@ input[type="submit"] {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 10px 20px; }
+
+input[type="submit" i]:active {
+  border-style: none; }
 
 /*--------------------------------- modal ----------------------------------*/
 .user-modal {
@@ -670,5 +680,67 @@ input[type="submit"] {
 #login, #signup, #reset-password {
   display: none; }
 
-#login.is-selected, #signup.is-selected, #reset-password.is-selected {
+#login.is-selected, #signup.is-selected,
+#reset-password.is-selected {
   display: block; }
+
+/*--------------------- office -------------------*/
+.mainContent .user_office {
+  background: url("../img/back_user_office.jpg") center no-repeat;
+  background-size: cover;
+  padding: 50px 0; }
+
+.flex5 .office {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 20px 20px;
+  box-shadow: 0px 0px 20px 20px; }
+
+.blockText p,
+.blockText #linkTour {
+  font: normal 1.6rem "Ubuntu";
+  color: #ffffff; }
+
+.blockText h4 {
+  font: 500 1.6rem "Ubuntu";
+  color: #ffffff; }
+
+.blockText .exit {
+  width: 22px;
+  height: 19px;
+  background: url("../img/noun_logout.png") center no-repeat; }
+
+.blockText .btn {
+  background: none;
+  border: none;
+  margin-top: 3px;
+  font: normal 1.6rem "Ubuntu";
+  color: #f1b027; }
+
+#office .form {
+  font: 500 1.6rem "Ubuntu";
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 15px;
+  text-align: center; }
+
+#office form input {
+  font: 300 1.6rem "Ubuntu";
+  color: #fcb827; }
+
+#office input[type="submit"] {
+  font: 500 1.6rem "Ubuntu";
+  color: #010f42; }
+
+/*---------------------- @media 568px --------------------------*/
+@media screen and (min-width: 568px) {
+  #office form p {
+    width: 50%; } }
+
+/*--------------------- //office -------------------*/
