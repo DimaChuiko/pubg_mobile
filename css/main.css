@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -65,12 +66,72 @@ button {
 .wrapper .linkRegistry {
   font: 500 1.6rem "Ubuntu";
   color: #010f42;
-  background-color: #fba93d;
+  background: -webkit-gradient(linear, left top, right top, from(#ffab2a), to(#ff890e));
+  background: linear-gradient(to right, #ffab2a, #ff890e);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 15px 20px;
   margin-top: 15px; }
 
+/*----------- авто блик --------*/
+.custom-btn {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s; }
+
+.custom-btn:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fa4923;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s; }
+
+.custom-btn:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 60px;
+  background: #fff;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px; }
+  30% {
+    left: 110%;
+    margin-left: 80px; }
+  100% {
+    left: 110%;
+    margin-left: 80px; } }
+
+/*----------- //авто блик --------*/
 /*----------------------------- header ---------------------------*/
 .wrapper .header {
   width: 100%;
@@ -109,7 +170,8 @@ button {
   margin-right: 20px; }
 
 .menuBlock .privatOffice {
-  background-color: #ffad2c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff981a), to(#ff7800));
+  background: linear-gradient(to right, #ff981a, #ff7800);
   font: 500 1.8rem "Ubuntu";
   color: #010f42;
   border: none;
@@ -125,7 +187,7 @@ button {
 .privatOffice .textBut {
   display: none; }
 
-/*----------------------------- banner ---------------------------*/
+/*--------------------- banner --------------------*/
 .wrapper .banner {
   padding: 50px 0;
   position: relative;
@@ -159,7 +221,7 @@ button {
   left: 20px;
   z-index: 1; }
 
-/*--------------------------------- tournaments ------------------------------*/
+/*-------------------- tournaments -------------------*/
 .mainContent .tournaments {
   background: url("../img/back_tournaments.jpg") center no-repeat;
   background-size: cover;
@@ -250,14 +312,15 @@ h2, .article {
   right: 15px;
   font: 500 1.6rem "Ubuntu";
   color: #280032;
-  background-color: #fba93d;
+  background: -webkit-gradient(linear, left top, right top, from(#ffab2b), to(#ff8e13));
+  background: linear-gradient(to right, #ffab2b, #ff8e13);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 10px 20px;
   margin-top: 15px; }
 
-/*----------------------- //tournaments ------------------------------*/
-/*------------------------- platform ---------------------------------*/
+/*----------------------- //tournaments --------------------*/
+/*------------------------- platform -----------------------*/
 .mainContent .platform {
   position: relative;
   padding: 50px 0;
@@ -290,7 +353,7 @@ h2, .article {
   align-items: center; }
 
 /*------------------------------------------
----------------------------------------------------------*/
+------------------------------------------*/
 .linkInstagram,
 .linkTelegram {
   width: 40px;
@@ -533,7 +596,8 @@ form input {
 input[type="submit"] {
   font: 500 1.6rem "Ubuntu";
   color: #010f42;
-  background-color: #fba93d;
+  background: -webkit-gradient(linear, left top, right top, from(#ffaa2a), to(#ff880d));
+  background: linear-gradient(to right, #ffaa2a, #ff880d);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 10px 20px; }
@@ -735,6 +799,7 @@ input[type="submit" i]:active {
   color: #fcb827; }
 
 #office input[type="submit"] {
+  border: none;
   font: 500 1.6rem "Ubuntu";
   color: #010f42; }
 
