@@ -486,7 +486,7 @@ h2, .article {
 @media screen and (min-width: 1024px) {
   .flex1 .blockH1 {
     top: 30%;
-    width: 25%; }
+    width: 50%; }
   .wrapper .platform::before {
     content: "";
     right: calc(50% - 39rem); }
