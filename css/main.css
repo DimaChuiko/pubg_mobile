@@ -208,7 +208,7 @@ button {
 
 .flex1 .blockH1 {
   position: absolute;
-  top: calc(50vh - 67px);
+  top: calc(50vh - (50% / 2));
   padding-left: 35px;
   z-index: 2; }
 
@@ -411,6 +411,7 @@ h2, .article {
   margin: 50px auto;
   text-align: center; }
 
+/*-------------------------- //foooter --------------------------*/
 /*---------------------- @media 568px --------------------------*/
 @media screen and (min-width: 568px) {
   .privatOffice .textBut {
@@ -434,8 +435,6 @@ h2, .article {
 
 /*---------------------- @media 667px --------------------------*/
 @media screen and (min-width: 667px) {
-  .flex1 .blockH1 {
-    top: 20%; }
   .privatOffice .textBut {
     display: inline;
     margin: 5px 5px 5px 15px; }
@@ -468,7 +467,8 @@ h2, .article {
   .flex2 .tournamentInfo {
     display: block; }
   .flex1 .blockH1 {
-    width: 60%; }
+    top: calc(50vh - (100% / 2));
+    width: 55%; }
   .blockH1 .pH1 {
     margin: 15px 0 15px 50px; }
   .banner .linkRegistry {
@@ -485,7 +485,6 @@ h2, .article {
 /*---------------------- @media 1024 --------------------------*/
 @media screen and (min-width: 1024px) {
   .flex1 .blockH1 {
-    top: 30%;
     width: 25%; }
   .wrapper .platform::before {
     content: "";
