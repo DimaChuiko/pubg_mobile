@@ -485,7 +485,11 @@ h2, .article {
 /*---------------------- @media 1024 --------------------------*/
 @media screen and (min-width: 1024px) {
   .flex1 .blockH1 {
+<<<<<<< HEAD
     width: 25%; }
+=======
+    top: 30%; }
+>>>>>>> 27f4d5e7e2419edef2927f57f36502182450de22
   .wrapper .platform::before {
     content: "";
     right: calc(50% - 39rem); }
