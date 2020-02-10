@@ -32,7 +32,8 @@ h2 {
   font: bold 2rem "Ubuntu";
   color: #ffffff;
   padding: 15px 30px;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 15px; }
 
 h3 {
   font: 500 1.5rem "Ubuntu";
@@ -50,7 +51,7 @@ h3 {
   font-size: 2rem; }
 
 .pH2 {
-  margin-top: 30px; }
+  margin: 30px 15px; }
 
 a {
   display: inline-block;
@@ -485,11 +486,7 @@ h2, .article {
 /*---------------------- @media 1024 --------------------------*/
 @media screen and (min-width: 1024px) {
   .flex1 .blockH1 {
-<<<<<<< HEAD
     width: 25%; }
-=======
-    top: 30%; }
->>>>>>> 27f4d5e7e2419edef2927f57f36502182450de22
   .wrapper .platform::before {
     content: "";
     right: calc(50% - 39rem); }
@@ -527,13 +524,10 @@ h2, .article {
   list-style-type: none;
   margin: 15px 0; }
 
-.flex4 h2 {
-  margin: 15px 0; }
-
 .flex4 ol {
   font: normal 1.6rem "Ubuntu";
   color: #ffffff;
-  margin: 80px 50px 80px 0; }
+  margin: 50px 15px; }
 
 @media screen and (min-width: 768px) {
   .flex4 ol,
@@ -768,10 +762,12 @@ input[type="submit" i]:active {
   padding: 50px 0; }
 
 .flex5 .office {
-  padding: 15px;
   background-color: rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 20px;
   box-shadow: 0px 0px 20px 20px; }
+
+.office .blockH4 {
+  padding: 15px; }
 
 .blockText p,
 .blockText #linkTour {
@@ -804,6 +800,7 @@ input[type="submit" i]:active {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  margin: 15px 0;
   padding: 15px;
   text-align: center; }
 
